@@ -1,3 +1,9 @@
+*{
+    margin: 0; padding: 0; box-sizing: border-box;
+}
+
+html, body { height: 100%; }
+
 .container{
     display: grid;
     width: 98.7vw;
@@ -14,21 +20,33 @@
 header{
     grid-area:header;
     background-color:blueviolet;
+    border: 3px solid black;
+    margin: 2px;
+    margin-top: 5px;
 }
 main{
     grid-area: main;
     background-color:#a3091e;
+    border: 3px solid black;
+    margin: 2px;
 }
 aside{
     grid-area: sidebar;
     background-color:aquamarine;
+    border: 3px solid black;
+    margin: 2px;
 }
 footer{
     grid-area: footer;
     background-color: yellowgreen;
+    border: 3px solid black;
+    margin: 2px;
 }
 nav{
     grid-area: nav;
     background-color: orange;
+    padding: 3px;
     border: 2px dashed black;
+    margin: 2px;
+    margin-top: 5px;
 }
