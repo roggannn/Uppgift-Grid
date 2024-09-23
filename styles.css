@@ -8,13 +8,25 @@ html, body { height: 100%; }
     display: grid;
     width: 100vw;
     min-height: 100vh;
-    grid-template-columns: 0.5fr 2fr 2fr 1fr; 
-    grid-template-rows:1fr 2fr 1fr;
+    grid-template-columns: 0.5fr 3fr 2fr 1.5fr 1fr; 
+    grid-auto-rows:minmax(100px,auto);
 
     grid-template-areas:
-    "nav header header header"
-    "nav main main sidebar"
-    "nav footer footer footer";
+    "nav header header header header"
+    "nav main main sidebar ."
+    "nav footer footer footer footer";
+}
+
+.doggotext{
+    font-size: 50px;
+    text-align: center;
+    vertical-align: bottom;
+}
+
+.doritostext{
+    font-size: 100px;
+    text-align: center;
+    
 }
 
 header{
@@ -23,6 +35,7 @@ header{
     border: 3px solid black;
     margin: 2px;
     margin-top: 5px;
+    align-content: center;
 }
 main{
     grid-area: main;
@@ -35,7 +48,6 @@ aside{
     background-color:aquamarine;
     border: 3px solid black;
     margin: 2px;
-    align-content:center;
 }
 footer{
     grid-area: footer;
